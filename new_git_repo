@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+function __get_repo_name()
+	if [ ! $1 ]; then
+		echo -en "\033c\n\tPlease enter the name you want to use\n\tfor this new repo: "
+		read -r NEW_REPO_NAME
+}
