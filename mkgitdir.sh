@@ -1,5 +1,17 @@
 #!/bin/bash
 
+## [ TODO: ] ##################################
+#
+# 1.	Add a function to get github username
+# 		and switch out:
+#
+#		"https://github.com/DX2DigitalGroup"
+#
+#		...with the new url with the user's
+#		username inserted instead.
+#
+###############################################
+
 function __make_git_dir(){
 GITDIRNAME=$1
 ## If the directory name doesnt exist...
@@ -99,7 +111,7 @@ function __installhub(){
 	fi
 }
 
-function __mkgit(){
+function mkgit(){
 	if [ $1 ]; then
 		GITDIR_P=$1
 	else
